@@ -1,3 +1,5 @@
+// the components made here will be reflected in all pages
+
 import Sidebar from "@/components/Sidebar";
 import Image from "next/image";
 import { redirect } from "next/navigation";
@@ -22,7 +24,7 @@ export default function RootLayout({
         <div className="root-layout">
           <Image src="/icons/logo.svg" width={30} height={30} alt="logo" />
           <div>
-            
+
             <MobileNav user={loggedIn} />
           </div>
         </div>
